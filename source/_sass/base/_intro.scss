@@ -1,0 +1,69 @@
+body.home-intro {
+  width: 100%;
+  display: table;
+}
+
+.intro {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  padding: 0 $base-spacing;
+  text-align: center;
+  color: $lighter-gray-color;
+  background: darken($primary-color, 6%);
+  overflow: hidden;
+}
+
+.intro-in {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  max-width: $desktop-width;
+  margin: auto;
+  padding: 6em 2em;
+
+  @include media($min-tablet) {
+    padding: 8em 0;
+  }
+
+  @include media($min-tablet-large) {
+    padding: 12em 0;
+  }
+
+  @include media($min-desktop-large) {
+    padding: 18em 0;
+  }
+}
+
+.intro-title {
+  font-size: 3rem;
+  margin: 0 0 20px;
+  color: $lighter-gray-color;
+  font-weight: $font-weight-light;
+
+  @include media($min-tablet) {
+    font-size: 3.6rem;
+  }
+
+  @include media($min-tablet-large) {
+    font-size: 4rem;
+  }
+
+  @include media($min-desktop-large) {
+    font-size: 4.6rem;
+  }
+}
+
+.intro-subtitle {
+  margin-bottom: $small-spacing;
+  font-size: 1.2em;
+  font-family: $serif-font-family;
+  font-weight: $font-weight-normal;
+  font-style: italic;
+
+  @include media($min-tablet-large) {
+    font-size: 1.6rem;
+  }
+}

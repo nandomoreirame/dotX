@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.1
+- 1.26.11
 cache:
 - bundler
 gemfile: travisGemfile
@@ -16,6 +16,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - HTML_FOLDER="./_site/"
   - GH_REF="nandomoreirame/dotX"
+  - secure: O+FxhlAk6S22cwwLXVRE4DhovDcnUW/0OYVEKxtWImEKpLSroPHw5rqWFO4syqkX9JXCDiIPnyrkFdtRgfHwDVrw75c0LkuGlVO5u36TVHVYcurUGYTxQ+BMAPrN+IVMMEeDzDZW7BTWRNh3oU9faB1uUS0gJMGE6atbBc5NU/gICeMUyvkLJ4MdY3rVzdic41gKGsMsP9Pl2As6Yb6khQWupOKcddvm6Hq3R+oExJc2RSC1OgffJ+rDEPzuJYzbMMiVlFg/lW6EkiXBKojwbPYBPk6sK+WUZDWQ+w83GIUFGJF+uzk6e1ZB/zJoimxWos5gat9OqIWv6yPSbj7Bb9UiEC6ktIg50uRrxGTm1w1dTeZlldUt4oTyWgJO19qAdL/K5rFqzWahvGD7h3zlu1qn3HgRE7iZKHx/NXvRLL2fDApntMHKfLCJSplsQiWv3peEns1uKob6QvhYr3IMICMBxXsUrCGXrxKc6+cij2D6DGfbnNZGeWeSzZoA8hZ+KV7Jxo67dnDhfsv/r1crZhmalQVd0tqVM9Hq/QTcDPfWVbYyNhLQ1JxxPD1o/Vds02cRMWFQBJI7pVX4l0AUbzii8J1mxr/upW2f9E7vrOim6vP3woJHgZEZGAwM0LBWblJC6mk49M+d2DZMRt4rfqCB8BIhkZGVbfTQ0jxNnCU=
 branches:
   only:
   - master

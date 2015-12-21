@@ -10,11 +10,11 @@
   font-family: $base-font-family;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   line-height: 1;
-  padding: ($small-spacing/1.4) $base-spacing;
+  padding: $small-spacing $base-spacing;
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
+  @include transition(background-color $base-duration $base-timing);
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;

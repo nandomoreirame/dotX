@@ -1,14 +1,27 @@
 ---
 layout: default
+title: Blog
+subtitle: what I'm writing
 ---
 
 <section class="post-list">
+
+  <header class="post-header intro">
+    <div class="intro-in">
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <h2 class="intro-subtitle">{{ page.subtitle }}</h2>
+      {% endif %}
+    </div>
+  </header>
+
   {% for post in site.posts %}
-    <article>
+    <article class="post-item container">
       <h1>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h1>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     </article>
   {% endfor %}
+
 </section>

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+subtitle: It's Free!
 permalink: /about/
 ---
 

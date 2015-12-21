@@ -8,7 +8,8 @@ layout: compress
 
   <body{% if page.body_class %} class="{{ page.body_class }}{% endif %}">
 
-      {{ content }}
+    {{ content }}
 
+    {% include scripts.html %}
   </body>
 </html><!-- by nandomoreira.me -->

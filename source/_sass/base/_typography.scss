@@ -99,3 +99,25 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+code {
+  background: none;
+  border-radius: 0;
+  border: none;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0 5px;
+  background-color: lighten($light-gray-color, 6%);
+}
+
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0;
+
+  code {
+    line-height: 1.75em;
+  }
+}

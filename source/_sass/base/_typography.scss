@@ -70,12 +70,13 @@ p {
 
 a {
   color: $action-color;
-  text-decoration: none;
+  text-decoration: underline;
   transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
+    text-decoration: none;
     color: shade($action-color, 25%);
   }
 }
@@ -108,7 +109,7 @@ code {
   font-size: 0.9em;
   margin: 0;
   padding: 0 5px;
-  background-color: lighten($light-gray-color, 6%);
+  background-color: lighten($lighter-gray-color, 6%);
 }
 
 pre {

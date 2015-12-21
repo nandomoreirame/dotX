@@ -34,19 +34,19 @@ $primary-color: #3cc76a;
 $white-color: #fff;
 $black-color: #000;
 $blue-color: #477dca;
-$dark-gray-color: #333;
-$medium-gray-color: #999;
-$light-gray-color: #ddd;
-$lighter-gray-color: tint($white-color, 75%);
+$dark-gray-color: lighten($black-color, 25%);
+$medium-gray-color: lighten($dark-gray-color, 20%);
+$light-gray-color: lighten($medium-gray-color, 20%);
+$lighter-gray-color: lighten($light-gray-color, 20%);
 
 // Font Colors
 //
-$base-font-color: $dark-gray-color;
-$action-color: $blue-color;
+$base-font-color: $medium-gray-color;
+$action-color: $primary-color;
 
 // Border
 //
-$base-border-color: $light-gray-color;
+$base-border-color: lighten($lighter-gray-color, 5%);
 $base-border: 1px solid $base-border-color;
 
 // Background Colors

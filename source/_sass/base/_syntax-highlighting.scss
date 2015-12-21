@@ -1,5 +1,4 @@
 .highlight {
-  @extend %clearfix;
   padding: 0;
   margin: {
     top: 1.2em;
@@ -12,6 +11,7 @@
   }
 
   pre {
+    position: relative;
     margin: 0;
     padding: 1.3em;
     white-space: pre;

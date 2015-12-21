@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Blog
-subtitle: what I'm writing
+subtitle: what I'm writing..
 ---
 
 <section class="post-list">
@@ -17,10 +17,14 @@ subtitle: what I'm writing
 
   {% for post in site.posts %}
     <article class="post-item container">
-      <h1>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h1>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <header>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h1 class="post-title">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h1>
+      </header>
+
+      <p>{{ post.content | strip_html | truncatewords: 56 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">Read more</a></p>
     </article>
   {% endfor %}
 

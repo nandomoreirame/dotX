@@ -119,6 +119,3 @@ DEPENDENCIES
   rake (~> 10.4.2)
   sass (~> 3.4.10)
   travis (~> 1.8)
-
-BUNDLED WITH
-   1.10.6

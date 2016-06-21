@@ -2,7 +2,7 @@
 
 > Simple & Beautiful Jekyll theme
 
-### [Demo](http://nandomoreira.me/dotX/)
+### [Demo](https://github.nandomoreira.me/dotX/)
 
 ![dotX - free Jekyll theme](/screenshot.png)
 
@@ -37,4 +37,4 @@ It is under [the MIT license](/LICENSE).
 
 Enjoy :yum:
 
-by [nandomoreira.me](http://nandomoreira.me)
+by [nandomoreira.me](https://nandomoreira.me)

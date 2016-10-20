@@ -1,0 +1,70 @@
+require 'yaml'
+
+# open yaml file
+yml = YAML::load(File.open('_config.yml'))
+
+desc 'create a new draft post'
+task :post do
+  title = ENV['title']
+  slug = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
+  permalink = "#{title.downcase.gsub(/[^\w]+/, '-')}"
+
+  file = File.join(
+    File.dirname(__FILE__),
+    "#{yml['source']}/"+"_posts",
+    slug + '.markdown'
+  )
+
+  if File.exist?(file)
+    abort("rake aborted!\n #{file} already exists.")
+  end
+
+  File.open(file, "w") do |f|
+    f << <<-EOS.gsub(/^    /, '')
+    ---
+    layout: post
+    title: "#{title}"
+    permalink: "#{permalink}"
+    date: #{Time.now.strftime('%Y-%m-%d %H:%M')}
+    categories:
+    ---
+
+    EOS
+  end
+
+  system ("#{ENV['editor']} #{file}")
+  puts "Creating new draft post: #{file}"
+end
+
+desc 'create a new page'
+task :page do
+  name = ENV['name']
+  title = name.capitalize
+  slug = "#{name.downcase.gsub(/[^\w]+/, '-')}"
+  permalink = "/#{slug}/"
+
+  file = File.join(
+    File.dirname(__FILE__),
+    "#{yml['source']}/",
+    slug + '.md'
+  )
+
+  if File.exist?(file)
+    abort("rake aborted!\n #{file} already exists.")
+  end
+
+  File.open(file, "w") do |f|
+    f << <<-EOS.gsub(/^    /, '')
+    ---
+    layout: page
+    title: "#{title}"
+    subtitle: 
+    permalink: "#{permalink}"
+    ---
+
+    EOS
+  end
+
+  system ("#{ENV['editor']} #{file}")
+  puts "Creating page: #{file}"
+end

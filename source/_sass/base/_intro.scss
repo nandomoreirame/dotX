@@ -3,7 +3,8 @@ body.home-intro {
   display: table;
 
   .intro {
-    display: table-cell;
+    display: flex;
+    height: 100%;
   }
 }
 

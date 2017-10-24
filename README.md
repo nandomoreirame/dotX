@@ -2,7 +2,7 @@
 
 > Simple & Beautiful Jekyll theme
 
-### [Demo](https://nandomoreira.me/dotX/)
+### [Demo](https://nandomoreirame.github.io/dotX/)
 
 ![dotX - free Jekyll theme](/screenshot.png)
 

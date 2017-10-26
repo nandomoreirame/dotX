@@ -7,4 +7,5 @@ group :development do
   gem 'sass', '~> 3.4.10'
   gem 'jekyll', '~> 2.5.3'
   gem 'travis', '~> 1.8'
+  gem 'pygments.rb', '~> 1.2.0'
 end

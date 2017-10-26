@@ -4,8 +4,9 @@ source 'http://rubygems.org'
 
 group :development do
   gem 'rake', '~> 10.4.2'
-  gem 'sass', '~> 3.4.10'
-  gem 'jekyll', '~> 2.5.3'
+  gem 'sass', '~> 3.5.2'
+  gem 'jekyll', '~> 3.6.2'
   gem 'travis', '~> 1.8'
   gem 'pygments.rb', '~> 1.2.0'
+  gem 'colorator', '~> 1.1.0'
 end

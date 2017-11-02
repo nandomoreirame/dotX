@@ -2,6 +2,10 @@
 
 > Simple & Beautiful Jekyll theme
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/1QQGjzDQqsP1MDC8moUwzJjD/nandomoreirame/dotX'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/1QQGjzDQqsP1MDC8moUwzJjD/nandomoreirame/dotX.svg' />
+</a>
+
 ### [Demo](https://nandomoreirame.github.io/dotX/)
 
 ![dotX - free Jekyll theme](/screenshot.png)
@@ -38,7 +42,3 @@ It is under [the MIT license](/LICENSE).
 Enjoy :yum:
 
 by [nandomoreira.me](https://nandomoreira.me)
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/1QQGjzDQqsP1MDC8moUwzJjD/nandomoreirame/dotX'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/1QQGjzDQqsP1MDC8moUwzJjD/nandomoreirame/dotX.svg' />
-</a>
